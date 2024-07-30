@@ -54,10 +54,12 @@ export const login = async (req, res) => {
         res.cookie('accessToken', token, {
             httpOnly: true,
             secure : true,
+            domain : "https://voyago-tour.vercel.app",
             expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000) // 15 days
         }).cookie('userId', user._id.toString(), {
             httpOnly: true,
             secure : true,
+            domain : "https://voyago-tour.vercel.app",
             expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000) // 15 days
         });
 
