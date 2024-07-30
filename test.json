@@ -1,0 +1,41 @@
+[
+    {
+        "_id": "66812b1e7ea09ae10b3a40c5",
+        "title": "Bromo",
+        "city": "Jawa Timur",
+        "address": "Cemoro Lawang, Desa Ngadisari.",
+        "distance": 400,
+        "price": 450,
+        "maxGroupSize": 8,
+        "desc": "Destinasi yang akan dikunjungi adalah Kawasan Taman Nasional Gunung Bromo, Sunrise point, Pasir Berbisik, Batu Night Spectacular dan Pusat Oleh-Oleh Malang.",
+        "fasilitas": "Fasilitas trip berupa transportasi free wifi pulang dan pergi, makan pagi dan malam, air mineral sepanjang perjalanan, penginapan, spanduk properti foto, tour leader dan dokumentasi dari VoyaGo.",
+        "reviews": [],
+        "photo": "/tour-images/tour-img02.jpg",
+        "featured": true
+    },
+    {
+        "_id": "66812b1e7ea09ae10b3a40c6",
+        "title": "Nusa Penida",
+        "city": "Bali",
+        "address": "Kabupaten Klungkung.",
+        "distance": 500,
+        "price": 600,
+        "maxGroupSize": 8,
+        "desc": "Destinasi yang akan dikunjungi adalah Desa Penglipuran, Pantai Jimbaran, Pantai Pandawa, Pulau Nusa Penida (Broken Beach, Kelingking Beach).",
+        "fasilitas": "Fasilitas trip berupa transportasi free wifi pulang dan pergi, makan pagi dan malam, air mineral sepanjang perjalanan, penginapan, spanduk properti foto, tour leader dan dokumentasi dari VoyaGo.",
+        "reviews": [
+            {
+                "_id": "6698dbbf92ab6c0da4a3fae5",
+                "username": "Varrel",
+                "reviewText": "Pemandangannya indah banget, mau kesini lagi sama keluarga tahun depan.",
+                "rating": 5,
+                "createdAt": "2024-07-18T09:09:19.822Z",
+                "updatedAt": "2024-07-18T09:09:19.822Z",
+                "__v": 0
+            }
+        ],
+        "photo": "/tour-images/tour-img03.jpg",
+        "featured": true,
+        "updatedAt": "2024-07-18T09:09:19.891Z"
+    }
+]

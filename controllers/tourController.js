@@ -111,6 +111,8 @@ export const getAllTour = async (req, res) => {
             .skip(page * 8)
             .limit(8);
 
+        console.log(tours)
+
         res.status(200).json({
             success: true,
             count: tours.length,

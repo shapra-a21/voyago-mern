@@ -27,8 +27,10 @@ export const register = async (req, res) => {
 // User login
 export const login = async (req, res) => {
     const email = req.body.email;
+    console.log(email)
     try {
         const user = await User.findOne({ email });
+
 
         // if user doesn't exist
         if (!user) {
