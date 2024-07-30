@@ -14,8 +14,8 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
 const corsOptions = {
-    origin: "https://voyago-tour.vercel.app/",
-    credentials: true,
+    origin: 'https://voyago-tour.vercel.app', // Replace with your actual frontend URL without trailing slash
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
 };
 
 // Database connection
