@@ -13,10 +13,19 @@ import bookingRoute from './routes/bookings.js';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
+
+
+const allowedOrigins = ['http://localhost:3000', 'https://voyago-tour.vercel.app'];
+
+
 const corsOptions = {
-    secure: false, 
-    sameSite: "lax",    
-    origin: true,
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true,
 };
 
