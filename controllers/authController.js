@@ -51,15 +51,17 @@ export const login = async (req, res) => {
         const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET_KEY, { expiresIn: '15d' });
 
         // set token in browser cookies and send the response to the client
-        res.cookie('accessToken', token, {
+         res.cookie('accessToken', token, {
             httpOnly: true,
+            expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000), // 15 days,
+            path : "/",
             secure : true,
-            domain : "https://voyago-tour.vercel.app",
-            expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000) // 15 days
+            sameSite : "None"
         }).cookie('userId', user._id.toString(), {
             httpOnly: true,
+            path : "/",
             secure : true,
-            domain : "https://voyago-tour.vercel.app",
+            sameSite : "None",
             expires: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000) // 15 days
         });
 
